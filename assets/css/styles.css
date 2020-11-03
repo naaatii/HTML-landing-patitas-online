@@ -23,8 +23,8 @@ header h1
 
 header h1 a img
 {
-    width: 18%;
     max-width: 107px;
+    margin-left: 5%;
 }
 
 /*NAV*/
