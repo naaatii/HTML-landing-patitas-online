@@ -1,0 +1,174 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Geometria', sans-serif;
+}
+
+header
+{
+    background-color: #F8B329;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*LOGO*/
+header h1
+{
+    width: 33%;
+}
+
+header h1 a img
+{
+    width: 18%;
+    margin-left: 5%;
+}
+
+/*NAV*/
+header nav
+{
+    width: 33%;
+}
+
+header nav a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 10%;
+}
+
+header nav a:hover
+{
+    color: #48AF9B;
+}
+
+header nav button
+{
+    background-color: #48AF9B;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    margin-left: 10%;
+}
+
+header nav button:hover
+{
+    background-color: #addae4;
+    color:  #48AF9B;
+    cursor: pointer;
+}
+
+/*REDES*/
+#redes
+{
+    width: 33%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#redes a img
+{
+    width: 50%;
+}
+
+
+
+/*----SLIDER----*/
+#slider
+{
+    width: 100%;
+    overflow: hidden;
+}
+
+#contenedorSlider
+{
+    width: 75%;
+    margin: 2%;
+    overflow: hidden;
+}
+
+#contenedorImagenes /*figure*/
+{
+    margin: 0 auto;
+}
+
+#contenedorImagenes img
+{
+    width: 100%;
+}
+
+
+
+footer
+{
+    background-color: #48AF9B;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+footer h4
+{
+    color: white;
+    font-weight: normal;
+    margin-left: 5%;
+}
+
+
+
+/*----NOSOTROS Y SERVICIO----*/
+section
+{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.texto
+{
+    width: 65%;
+    margin: 5%;
+}
+
+.texto h1
+{
+    color: #48AF9B;
+    font-weight: 800;
+    font-size: 2.5em;
+}
+
+.texto p
+{
+    font-size: 1.8em;
+}
+
+.texto p strong
+{
+    color: #F8B329;
+}
+
+/*FOTO DE NOSOTROS*/
+#foto_nosotros
+{
+    width: 30%;
+    background-image: url(../img/siberiano.jpg);
+    background-size: cover;
+}
+
+/*FOTO DE SERVICIOS*/
+#foto_servicio
+{
+    width: 30%;
+    background-image: url(../img/gatito.jpg);
+    background-size: cover;
+}
