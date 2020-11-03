@@ -31,6 +31,8 @@ header h1 a img
 header nav
 {
     width: 33%;
+    display: flex;
+    justify-content: center;
 }
 
 header nav a
