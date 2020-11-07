@@ -346,6 +346,11 @@ section
         width: 30%;
     }
 
+    #redes a img
+    {
+        width: 35%;
+    }
+
     #slider
     {
         height: 48.9em;
