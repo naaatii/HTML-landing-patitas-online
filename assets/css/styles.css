@@ -386,6 +386,14 @@ section
     }
 }
 
+@media only screen and (max-width: 501px)
+{
+    #redes a img
+    {
+        margin-left: 20%;
+    }
+}
+
 
 
 /*----RESPONSIVE NOSOTROS Y SERVICIOS----*/
