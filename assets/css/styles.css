@@ -325,7 +325,7 @@ section
     #btn-menu:checked ~ .menu
     {
         margin: 0;
-        top: 7em;
+        top: 5em;
         padding-top: 2%;
         padding-bottom: 2%;
         border-bottom-right-radius: 30px;
