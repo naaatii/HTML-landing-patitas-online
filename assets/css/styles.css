@@ -126,6 +126,17 @@ header h1 a img
     width: 100%;
 }
 
+#apk
+{
+    display: none;
+}
+
+#apk:hover
+{
+    background-color: #addae4;
+    color:  #48AF9B;
+    cursor: pointer;
+}
 
 
 footer
@@ -327,7 +338,6 @@ section
         margin: 0;
         top: 5em;
         padding-top: 2%;
-        padding-bottom: 2%;
         border-bottom-right-radius: 30px;
         border-bottom-left-radius: 30px;
     }
@@ -342,8 +352,7 @@ section
 
     .menu button
     {
-        margin-left: 0%;
-        width: 30%;
+        display: none;
     }
 
     #redes a img
@@ -354,11 +363,26 @@ section
     #slider
     {
         height: 48.9em;
+        flex-direction: column;
     }
 
     #contenedorSlider
     {
-        margin-top: 24%;
+        margin-top: 0;
+    }
+
+    #apk
+    {
+        display: block;
+        width: 30%;
+        background-color: #48AF9B;
+        color: white;
+        font-size: 1.3em;
+        font-weight: bold;
+        padding: 15px 15px;
+        border: none;
+        border-radius: 20px;
+        margin: 0 auto;
     }
 
     /*---NOSOTROS Y SERVICIOS---*/
@@ -370,10 +394,6 @@ section
 
 @media only screen and (max-width: 768px)
 {
-    #contenedorSlider {
-        margin-top: 10%;
-    }
-
     header h1 {
         width: 25%;
     }
@@ -396,6 +416,11 @@ section
     #redes a img
     {
         margin-left: 30%;
+    }
+
+    #contenedorSlider
+    {
+        margin-top: -70%;
     }
 }
 
@@ -429,7 +454,7 @@ section
     
     #foto_servicio
     {
-        width: 68%;
+        width: 83%;
     }
 }
 
@@ -442,7 +467,7 @@ section
 
     #foto_servicio
     {
-        width: 75%;
+        width: 95%;
     }
 }
 
@@ -472,5 +497,25 @@ section
     #foto_servicio
     {
         display: none;
+    }
+
+    /*----HOME----*/
+    #contenedorSlider
+    {
+        margin-top: -30%;
+    }
+
+    #apk
+    {
+        width: 40%;
+    }
+}
+
+/*----HOME----*/
+@media only screen and (max-width: 501px)
+{
+    #contenedorSlider
+    {
+        margin-top: -70%;
     }
 }
