@@ -11,8 +11,25 @@ header
     width: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
     align-items: center;
+}
+
+#btn-menu
+{
+    display: none;
+}
+
+header label
+{
+    display: none;
+    width: 32px;
+    height: 32px;
+    padding: 1.5%;
+}
+
+header label:hover{
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.1);
 }
 
 /*LOGO*/
@@ -28,14 +45,14 @@ header h1 a img
 }
 
 /*NAV*/
-header nav
+.menu
 {
     width: 33%;
     display: flex;
-    justify-content: center;
+    align-items: baseline;
 }
 
-header nav a
+.menu a
 {
     text-decoration: none;
     color: white;
@@ -44,12 +61,12 @@ header nav a
     margin-left: 10%;
 }
 
-header nav a:hover
+.menu a:hover
 {
     color: #48AF9B;
 }
 
-header nav button
+.menu button
 {
     background-color: #48AF9B;
     color: white;
@@ -61,7 +78,7 @@ header nav button
     margin-left: 10%;
 }
 
-header nav button:hover
+.menu button:hover
 {
     background-color: #addae4;
     color:  #48AF9B;
@@ -87,6 +104,7 @@ header nav button:hover
 #slider
 {
     width: 100%;
+    height: 45.6em;
     overflow: hidden;
 }
 
@@ -135,6 +153,7 @@ section
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    height: 45.6em;
 }
 
 .texto
@@ -174,4 +193,254 @@ section
     width: 30%;
     background-image: url(../img/gatito.jpg);
     background-size: cover;
+}
+
+
+
+/*----RESPONSIVE HOME----*/
+@media only screen and (max-width: 1750px)
+{
+    #contenedorSlider
+    {
+        margin: 4%;
+    }
+}
+
+@media only screen and (max-width: 1635px)
+{
+    #contenedorSlider
+    {
+        margin: 5%;
+        width: 78%;
+    }
+
+    .menu
+    {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 1440px)
+{
+    #contenedorSlider
+    {
+        margin: 7%;
+        width: 81%;
+    }
+
+    header h1 a img {
+        margin-left: 10%;
+    }
+
+    .menu {
+        width: 60%;
+        justify-content: center;
+    }
+
+    #redes {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 1200px)
+{
+    #contenedorSlider {
+        width: 86%;
+        margin-top: 12%;
+    }
+
+    header h1
+    {
+        width: 50%;
+    }
+
+    header h1 a img {
+        margin-left: 15%;
+    }
+
+    .menu {
+        width: 70%;
+    }
+
+    #redes {
+        width: 100%;
+    }
+
+    /*---NOSOTROS Y SERVICIOS---*/
+    .texto h1
+    {
+        font-size: 2.3em;
+    }
+
+    .texto p {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 1024px)
+{
+    #contenedorSlider {
+        margin-top: 17%;
+    }
+
+    /*---NOSOTROS Y SERVICIOS---*/
+    .texto h1
+    {
+        font-size: 2.1em;
+    }
+
+    .texto p {
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (max-width: 870px)
+{
+    header h1
+    {
+        width: 25%;
+    }
+
+    header h1 a img {
+        margin-left: 20%;
+    }
+
+    header label
+    {
+        display: block;
+    }
+
+    .menu
+    {
+        position: absolute;
+        background-color: #F8B329;
+        flex-direction: column !important;
+        width: 100%;
+        margin-top: -80%;
+        transition: all 0.5s;
+        align-items: center;
+    }
+
+    #btn-menu:checked ~ .menu
+    {
+        margin: 0;
+        top: 8em;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+
+    .menu a
+    {
+        font-size: 1.3em;
+        padding-bottom: 3%;
+        margin-left: 0%;
+        text-align: center;
+    }
+
+    .menu button
+    {
+        margin-left: 0%;
+        width: 30%;
+    }
+
+    #contenedorSlider
+    {
+        margin-top: 24%;
+    }
+}
+
+@media only screen and (max-width: 768px)
+{
+    #contenedorSlider {
+        margin-top: 10%;
+    }
+
+    header h1 {
+        width: 35%;
+    }
+}
+
+@media only screen and (max-width: 600px)
+{
+    header h1 {
+        width: 50%;
+    }
+}
+
+
+
+/*----RESPONSIVE NOSOTROS Y SERVICIOS----*/
+@media only screen and (max-width: 1550px)
+{
+    .texto
+    {
+        margin: 3%;
+    }
+
+    #foto_nosotros
+    {
+        width: 40%;
+    }
+
+    #foto_servicio
+    {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 1200px)
+{
+    #foto_nosotros
+    {
+        width: 68%;
+    }  
+    
+    #foto_servicio
+    {
+        width: 68%;
+    }
+}
+
+@media only screen and (max-width: 768px)
+{
+    #foto_nosotros
+    {
+        width: 75%;
+    }
+
+    #foto_servicio
+    {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 690px)
+{
+    .texto
+    {
+        width: 100%;
+        margin: 5%;
+    }
+
+    .texto h1
+    {
+        font-size: 2.2em;
+    }
+
+    .texto p
+    {
+        font-size: 1.4em;
+    }
+
+    #foto_nosotros
+    {
+        display: none;
+    }
+
+    #foto_servicio
+    {
+        display: none;
+    }
 }
