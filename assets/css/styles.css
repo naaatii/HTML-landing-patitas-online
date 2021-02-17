@@ -146,6 +146,7 @@ footer
     margin: 0 auto;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
 }
 
 footer h4
@@ -153,6 +154,17 @@ footer h4
     color: white;
     font-weight: normal;
     margin-left: 5%;
+}
+
+#miBehance
+{
+    text-decoration: none;
+    color: white;
+}
+
+#miBehance img
+{
+    width: 12%;
 }
 
 
@@ -207,6 +219,94 @@ section
 }
 
 
+
+/*----ADMIN----*/
+#logo
+{
+    max-width: 30%;
+}
+
+#logo img
+{
+    max-width: 50px;
+    margin-left: 5%;
+}
+
+#main_admin
+{
+    position: relative;
+}
+
+#inicioSesion_admin
+{
+    background-color: bisque;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#inicioSesion_admin div
+{
+    background-color: coral;
+    width: 25%;
+    margin: 0 auto;
+    height: 35em;
+    margin-top: 6%;
+}
+
+#section_admin
+{
+    width: 100%;
+    height: 52.65em;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#section_admin aside
+{
+    width: 20%;
+    background-color: #48AF9B;
+    padding-left: 1%;
+}
+
+#section_admin aside h3{
+    color: white;
+}
+
+#section_admin article
+{
+    width: 80%;
+    background-color: white;
+    padding: 1%;
+}
+
+.cards
+{
+    width: 25%;
+    background-color: #addae4;
+    padding: 1%;
+    border-radius: 30px;
+    margin: 1%;
+    float: left;
+}
+
+.cards button
+{
+    background-color: #48AF9B;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.cards button:hover
+{
+    background-color: #F8B329;
+    cursor: pointer;
+}
 
 /*----RESPONSIVE HOME----*/
 @media only screen and (max-width: 1750px)
