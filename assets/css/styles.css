@@ -153,6 +153,9 @@ footer h4
     color: white;
     font-weight: normal;
     margin-left: 5%;
+    font-size: 1.2em;
+    margin-top: 2.35555%;
+    
 }
 
 #miBehance
@@ -161,9 +164,9 @@ footer h4
     color: white;
 }
 
-#miBehance img
+#miBehance:hover
 {
-    width: 12%;
+    font-weight: 600;
 }
 
 
@@ -487,6 +490,12 @@ section
         text-decoration: none;
     }
 
+    footer h4
+    {
+        font-size: 1em;
+        margin-top: 2%;
+    }
+
 
     /*---NOSOTROS Y SERVICIOS---*/
     section
@@ -499,11 +508,6 @@ section
 {
     header h1 {
         width: 25%;
-    }
-
-    #miBehance img
-    {
-        width: 16%;
     }
 }
 
@@ -534,11 +538,6 @@ section
     footer h4
     {
         margin-left: 8%;
-    }
-
-    #miBehance img
-    {
-        width: 33%;
     }
 }
 
